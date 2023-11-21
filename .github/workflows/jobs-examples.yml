@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: use of artifact created
-        run: ls build-result.txt
       - uses: actions/upload-artifact@v2
         with:
           name: build-result
           path: build-result.txt
+      - name: use of artifact created
+        run: ls build-result.txt
