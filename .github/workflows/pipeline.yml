@@ -51,5 +51,5 @@ jobs:
       with:
         name: build
         path: frontend/.next/server/app
-    - run: aws s3 cp frontend/.next/server/app s3://$BUCKET_S3 --recursive --acl public-rea     
+    - run: aws s3 cp frontend/.next/server/app s3://$BUCKET_S3 --recursive --acl public-read     
       
