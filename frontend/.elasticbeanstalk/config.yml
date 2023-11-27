@@ -1,8 +1,8 @@
 branch-defaults:
   default:
-    environment: frontend
+    environment: stage-frontend
 environment-defaults:
-  frontend:
+  stage-frontend:
     branch: null
     repository: null
 global:
