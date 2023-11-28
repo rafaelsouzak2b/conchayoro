@@ -49,6 +49,7 @@ jobs:
            frontend/Dockerrun.aws.json
   deploy-prod:
     runs-on: ubuntu-latest
+    environment: production
     needs: build
     steps:
       - uses: actions/download-artifact@v3
