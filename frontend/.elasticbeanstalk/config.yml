@@ -1,34 +1,22 @@
 branch-defaults:
   default:
     environment: frontend
-environments:
+environment-defaults:
   frontend:
     branch: null
     repository: null
-    global:
-      application_name: conchayoro
-      default_ec2_keyname: vockey
-      default_platform: Docker
-      default_region: us-east-1
-      include_git_submodules: true
-      instance_profile: LabInstanceProfile
-      platform_name: null
-      platform_version: null
-      profile: null
-      sc: null
-      workspace_type: Application
   stage-frontend:
     branch: null
     repository: null
-    global:
-      application_name: conchayoro
-      default_ec2_keyname: vockey
-      default_platform: Docker
-      default_region: us-east-1
-      include_git_submodules: true
-      instance_profile: LabInstanceProfile
-      platform_name: null
-      platform_version: null
-      profile: null
-      sc: null
-      workspace_type: Application
+global:
+  application_name: conchayoro
+  default_ec2_keyname: vockey
+  default_platform: Docker
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: LabInstanceProfile
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: null
+  workspace_type: Application
